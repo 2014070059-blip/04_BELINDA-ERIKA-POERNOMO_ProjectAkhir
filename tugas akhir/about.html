@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Serenity Hotel</title>
+  <link rel="icon" href="serenity logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #081738;
+      color: #f7eba5;
+      font-family: 'Inter', sans-serif;
+    }
+    .gold {
+      color: #C8AA6E;
+    }
+    .gold-border {
+      border-color: #ffb92c;
+    }
+    .glow-gold {
+      box-shadow: 0 0 60px rgb(255, 235, 157);
+    }
+  </style>
+
+  <!-- Custom Fonts -->
+  <style>
+    @font-face {
+      font-family: 'FortalesiaPlain';
+      src: url('fonts/FortalesiaPlain.otf') format('opentype');
+    }
+
+    @font-face {
+      font-family: 'FortalesiaScript';
+      src: url('fonts/FortalesiaScript.otf') format('opentype');
+    }
+  </style>
+
+</head>
+
+<body class="min-h-screen flex flex-col">
+
+  <!-- Navbar -->
+  <header class="flex justify-between items-center px-10 py-6 bg-[#141414]/90 backdrop-blur-md border-b border-[#2a2a2a]">
+    <h1 style="font-family: 'FortalesiaScript';" class="text-3xl text-[#C8AA6E]">
+      Serenity
+    </h1>
+
+    <nav class="flex items-center space-x-8 text-gray-300">
+      <a href="landing.html" class="hover:text-[#C8AA6E] transition font-medium">Home</a>
+      <a href="about.html" class="text-[#C8AA6E] font-medium border-b border-[#C8AA6E] pb-1">About Us</a>
+      <a href="book.html">
+        <button 
+          class="bg-[#C8AA6E] text-white px-5 py-2 rounded-lg font-medium transition hover:bg-[#d6b97f]" 
+          style="transition: all 0.3s ease; box-shadow: 0 0 0 rgba(200,170,110,0);"
+          onmouseover="this.style.boxShadow='0 0 25px rgba(200,170,110,0.5)'"
+          onmouseout="this.style.boxShadow='0 0 0 rgba(200,170,110,0)'">
+          Book Now
+        </button>
+      </a>
+      
+    </nav>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section class="px-10 md:px-20 py-20 bg-[#0D0D0D]">
+
+    <h2 
+      class="text-5xl md:text-6xl mb-8 text-center gold"
+      style="font-family: 'FortalesiaPlain'; letter-spacing: 0.15em;">
+      ABOUT <span class="text-[#C8AA6E]">US</span>
+    </h2>
+
+    <div class="max-w-4xl mx-auto text-center text-gray-300 leading-relaxed text-lg">
+
+      <p class="mb-6">
+        At <span class="gold font-semibold">Hotel Serenity</span>, we believe luxury is more than just comfort — 
+        it is an experience crafted with elegance, precision, and heartfelt hospitality.
+      </p>
+
+      <p class="mb-6">
+        Established with a vision of blending timeless aesthetics and modern sophistication, 
+        Serenity offers guests a peaceful escape from the everyday world. From meticulously designed 
+        rooms to world-class service, every detail is curated to elevate your stay.
+      </p>
+
+      <p>
+        Whether you're here for a romantic getaway, a business retreat, or a restful vacation,  
+        our team is dedicated to ensuring every moment reflects the true essence of luxury.
+      </p>
+
+    </div>
+
+    <!-- Image Box -->
+    <div class="w-full md:w-1/2 h-72 rounded-lg mt-10 md:mt-0 shadow-lg overflow-hidden">
+      <img src="lobby_serenity.jpg" alt="Gedung Hotel Serenity" class="w-full h-full object-cover rounded-lg"/>
+  </div>
+
+  </section>
+
+  <!-- OUR VALUES -->
+  <section class="px-10 md:px-20 py-20 bg-[#141414] text-center">
+
+    <h3 class="text-3xl font-semibold mb-10 gold">Our Core Values</h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+      <div class="bg-[#1a1a1a] rounded-xl shadow-md p-6 border border-[#2a2a2a] hover:border-[#C8AA6E]/50 transition">
+        <h4 class="gold text-xl mb-3">Elegance</h4>
+        <p class="text-gray-400">A timeless atmosphere where beauty meets refinement.</p>
+      </div>
+
+      <div class="bg-[#1a1a1a] rounded-xl shadow-md p-6 border border-[#2a2a2a] hover:border-[#C8AA6E]/50 transition">
+        <h4 class="gold text-xl mb-3">Comfort</h4>
+        <p class="text-gray-400">Spaces designed for serenity, warmth, and ultimate relaxation.</p>
+      </div>
+
+      <div class="bg-[#1a1a1a] rounded-xl shadow-md p-6 border border-[#2a2a2a] hover:border-[#C8AA6E]/50 transition">
+        <h4 class="gold text-xl mb-3">Excellence</h4>
+        <p class="text-gray-400">Service delivered with precision, passion, and dedication.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-gray-500 border-t border-[#2a2a2a] bg-[#0D0D0D]">
+    © 2025 <span class="gold">Hotel Serenity</span>. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
